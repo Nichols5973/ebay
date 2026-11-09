@@ -59,6 +59,10 @@
             {
               "name": "WeHealthcare Theme",
               "value": "wehealthcare-theme"
+            },
+            {
+              "name": "eBay Theme",
+              "value": "ebay-theme"
             }
           ]
       },
@@ -7306,6 +7310,83 @@
         "label": "Submit URL",
         "description": "URL to redirect to when Book Appointment is clicked (if Submit Action is enabled)",
         "condition": { "==": [{ "var": "enableSubmitAction" }, true] }
+      }
+    ]
+  },
+  {
+    "id": "hero-holiday",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "imageAlt",
+        "label": "Alt",
+        "value": ""
+      },
+      {
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "Text",
+        "valueType": "string",
+        "description": "Eyebrow paragraph, heading, description, then CTA links (bold = primary, italic = secondary)."
+      }
+    ]
+  },
+  {
+    "id": "category-card",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "Text",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "deal-card",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "Text",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "budget-card",
+    "fields": [
+      {
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "Text",
+        "valueType": "string"
       }
     ]
   }

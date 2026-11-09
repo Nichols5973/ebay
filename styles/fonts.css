@@ -4664,6 +4664,14 @@
   src: url('../fonts/AdobeCleanBlack.woff') format('woff');
 }
 
+/* Inter (eBay theme) */
+@font-face {
+  font-family: Inter;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url('../fonts/InterVariable.woff2') format('woff2');
+}
+
 
  
 
