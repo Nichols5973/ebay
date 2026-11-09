@@ -1,0 +1,81 @@
+main > .section.cards-budget-container {
+  padding: 52px 0 64px;
+}
+
+.cards-budget {
+  --cards-budget-title: var(--ebay-white, #fff);
+}
+
+.cards-budget > ul {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.cards-budget > ul > li {
+  --cards-budget-bg: var(--ebay-green, #0b3b2e);
+  --cards-budget-sub: var(--ebay-green-pale, #cfe5dc);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  min-height: 160px;
+  padding: 24px 32px;
+  border-radius: 16px;
+  background-color: var(--cards-budget-bg);
+}
+
+.cards-budget > ul > li:nth-child(3n + 2) {
+  --cards-budget-bg: var(--ebay-red, #c8102e);
+  --cards-budget-sub: var(--ebay-red-pale, #ffe8eb);
+}
+
+.cards-budget > ul > li:nth-child(3n) {
+  --cards-budget-bg: var(--ebay-ink, #191919);
+  --cards-budget-sub: var(--ebay-subtle, #ccc);
+}
+
+.cards-budget .cards-budget-body > * {
+  margin: 0;
+}
+
+.cards-budget .cards-budget-body h3 {
+  color: var(--cards-budget-title);
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 700;
+}
+
+.cards-budget .cards-budget-body p {
+  margin-top: 8px;
+  color: var(--cards-budget-sub);
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.cards-budget .cards-budget-body a:any-link {
+  color: inherit;
+  font: inherit;
+}
+
+@media (width >= 900px) {
+  .cards-budget > ul {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+
+  .cards-budget .cards-budget-body h3 {
+    font-size: 40px;
+    line-height: 48px;
+  }
+}
+
+@media (width >= 1200px) {
+  .cards-budget > ul {
+    gap: 49px;
+  }
+}

@@ -39,3 +39,80 @@ footer .footer a:hover {
     padding: 50px 32px;
   }
 }
+
+/* --------------------------
+   eBay theme footer
+--------------------------- */
+body.ebay-theme footer {
+  background-color: var(--footer-background-color);
+  color: var(--footer-text-color);
+  font-family: var(--body-font-family);
+}
+
+body.ebay-theme footer .footer > div {
+  max-width: calc(var(--ebay-content-width) + (2 * var(--ebay-gutter)));
+  padding: 44px var(--ebay-gutter) 27px;
+  box-sizing: border-box;
+}
+
+body.ebay-theme footer .footer .section {
+  margin: 0;
+}
+
+body.ebay-theme footer .footer .section > div {
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+
+body.ebay-theme footer .footer .section:first-child .default-content-wrapper {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(0, 1fr);
+  gap: 13px 24px;
+}
+
+body.ebay-theme footer .footer .default-content-wrapper p,
+body.ebay-theme footer .footer .default-content-wrapper strong {
+  font-size: 14px;
+  line-height: 17px;
+}
+
+body.ebay-theme footer .footer ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body.ebay-theme footer .footer li {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+body.ebay-theme footer .footer a:any-link {
+  vertical-align: top;
+  white-space: normal;
+  color: var(--ebay-subtle);
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+body.ebay-theme footer .footer a:hover {
+  color: var(--ebay-white);
+}
+
+body.ebay-theme footer .footer .section:last-child:not(:first-child) p {
+  margin-top: 37px;
+  color: #999;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+@media (width >= 900px) {
+  body.ebay-theme footer .footer .section:first-child .default-content-wrapper {
+    grid-auto-columns: 320px;
+    gap: 13px 0;
+  }
+}

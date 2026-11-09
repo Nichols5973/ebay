@@ -1,0 +1,184 @@
+/* --------------------------
+   Hero (holiday)
+--------------------------- */
+.hero-holiday {
+  --hero-holiday-bg: var(--ebay-red, #c8102e);
+  --hero-holiday-circle-dark: var(--ebay-red-dark, #a50d26);
+  --hero-holiday-circle-light: var(--ebay-red-light, #d92b47);
+  --hero-holiday-eyebrow: var(--ebay-red-tint, #ffd9de);
+  --hero-holiday-title: var(--ebay-white, #fff);
+  --hero-holiday-text: var(--ebay-red-pale, #ffe8eb);
+  --hero-holiday-title-size: 40px;
+  --hero-holiday-title-line: 48px;
+  --hero-holiday-media-radius: 24px;
+
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+  align-items: center;
+  padding: 48px 0;
+  font-family: var(--body-font-family);
+}
+
+main > .section.hero-holiday-container {
+  background-color: var(--ebay-red, #c8102e);
+  overflow-x: clip;
+}
+
+.hero-holiday .hero-holiday-content,
+.hero-holiday .hero-holiday-media {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-holiday .hero-holiday-content > * {
+  margin: 0;
+}
+
+.hero-holiday .hero-holiday-eyebrow {
+  margin-bottom: 15px;
+  color: var(--hero-holiday-eyebrow);
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.hero-holiday h1 {
+  margin: 0;
+  color: var(--hero-holiday-title);
+  font-size: var(--hero-holiday-title-size);
+  line-height: var(--hero-holiday-title-line);
+  font-weight: 700;
+  white-space: normal;
+  overflow: visible;
+}
+
+.hero-holiday .hero-holiday-content > p:not(.hero-holiday-eyebrow) {
+  margin-top: 18px;
+  color: var(--hero-holiday-text);
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.hero-holiday .hero-holiday-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.hero-holiday .hero-holiday-actions a.button:any-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  min-width: 200px;
+  height: 56px;
+  padding: 0 32px;
+  border: 2px solid var(--ebay-white, #fff);
+  border-radius: 28px;
+  font-size: 17px;
+  line-height: 21px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.hero-holiday .hero-holiday-actions a.button.primary:any-link {
+  background-color: var(--ebay-white, #fff);
+  color: var(--hero-holiday-bg);
+}
+
+.hero-holiday .hero-holiday-actions a.button.secondary:any-link {
+  min-width: 220px;
+  background-color: transparent;
+  color: var(--ebay-white, #fff);
+}
+
+.hero-holiday .hero-holiday-actions a.button:hover,
+.hero-holiday .hero-holiday-actions a.button:focus-visible {
+  text-decoration: underline;
+}
+
+.hero-holiday .hero-holiday-media picture {
+  display: block;
+  overflow: hidden;
+  border-radius: var(--hero-holiday-media-radius);
+}
+
+.hero-holiday .hero-holiday-media img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 5 / 4;
+  object-fit: cover;
+}
+
+.hero-holiday .hero-holiday-decor {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.hero-holiday .hero-holiday-decor span {
+  position: absolute;
+  z-index: 0;
+  border-radius: 50%;
+}
+
+.hero-holiday .hero-holiday-decor span:first-child {
+  top: -52px;
+  right: -40px;
+  width: 400px;
+  height: 400px;
+  background-color: var(--hero-holiday-circle-dark);
+}
+
+.hero-holiday .hero-holiday-decor span:last-child {
+  right: -80px;
+  bottom: -8px;
+  width: 240px;
+  height: 240px;
+  background-color: var(--hero-holiday-circle-light);
+}
+
+@media (width < 900px) {
+  .hero-holiday .hero-holiday-decor span:first-child {
+    width: 260px;
+    height: 260px;
+    top: -40px;
+    right: -100px;
+  }
+
+  .hero-holiday .hero-holiday-decor span:last-child {
+    width: 160px;
+    height: 160px;
+    right: -60px;
+  }
+}
+
+@media (width >= 900px) {
+  .hero-holiday {
+    --hero-holiday-title-size: 56px;
+    --hero-holiday-title-line: 68px;
+
+    grid-template-columns: 1fr minmax(0, 420px);
+    min-height: 520px;
+    padding: 58px 0 62px;
+    box-sizing: border-box;
+  }
+
+  .hero-holiday .hero-holiday-content > p:not(.hero-holiday-eyebrow) {
+    font-size: 20px;
+  }
+}
+
+@media (width >= 1200px) {
+  .hero-holiday {
+    --hero-holiday-title-size: 72px;
+    --hero-holiday-title-line: 87px;
+
+    grid-template-columns: 1fr 500px;
+  }
+}

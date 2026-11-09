@@ -1105,6 +1105,149 @@ table {
   transform: translateX(0);
 }
 
+/* --------------------------
+   eBay theme (page metadata: theme = ebay-theme)
+--------------------------- */
+.ebay-theme {
+  --ebay-red: #c8102e;
+  --ebay-red-dark: #a50d26;
+  --ebay-red-light: #d92b47;
+  --ebay-red-tint: #ffd9de;
+  --ebay-red-pale: #ffe8eb;
+  --ebay-green: #0b3b2e;
+  --ebay-green-pale: #cfe5dc;
+  --ebay-ink: #191919;
+  --ebay-muted: #767676;
+  --ebay-subtle: #cccccc;
+  --ebay-surface: #f7f7f7;
+  --ebay-field: #f5f5f5;
+  --ebay-border: #e5e5e5;
+  --ebay-white: #ffffff;
+  --ebay-content-width: 1280px;
+  --ebay-gutter: 24px;
+  --ebay-section-title-size: 26px;
+  --ebay-section-title-line: 32px;
+  --background-color: var(--ebay-white);
+  --text-color: var(--ebay-ink);
+  --link-color: var(--ebay-ink);
+  --link-hover-color: var(--ebay-red);
+  --main-accent-color: var(--ebay-red);
+  --nav-background-color: var(--ebay-white);
+  --nav-text-color: var(--ebay-ink);
+  --footer-background-color: var(--ebay-ink);
+  --footer-text-color: var(--ebay-white);
+  --body-font-family: inter, roboto, roboto-fallback, sans-serif;
+  --heading-font-family: inter, roboto, roboto-fallback, sans-serif;
+  --light-font-family: inter, roboto, roboto-fallback, sans-serif;
+  --black-font-family: inter, roboto, roboto-fallback, sans-serif;
+  --nav-height: 72px;
+
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+@media (width >= 900px) {
+  .ebay-theme {
+    --ebay-gutter: 32px;
+    --ebay-section-title-size: 32px;
+    --ebay-section-title-line: 39px;
+  }
+}
+
+@media (width >= 1200px) {
+  .ebay-theme {
+    --ebay-gutter: 80px;
+  }
+}
+
+.ebay-theme a::after,
+.ebay-theme a:hover::after,
+.ebay-theme a.button::after,
+.ebay-theme main picture::before {
+  content: none;
+}
+
+.ebay-theme a:any-link,
+.ebay-theme a.button:any-link {
+  font-family: var(--body-font-family);
+}
+
+.ebay-theme h1,
+.ebay-theme h2,
+.ebay-theme h3,
+.ebay-theme h4,
+.ebay-theme h5,
+.ebay-theme h6 {
+  font-family: var(--heading-font-family);
+  font-weight: 700;
+  white-space: normal;
+  overflow: visible;
+  color: var(--ebay-ink);
+}
+
+.ebay-theme main > .section {
+  margin: 0;
+  min-height: 0;
+}
+
+.ebay-theme main > .section > div {
+  max-width: calc(var(--ebay-content-width) + (2 * var(--ebay-gutter)));
+  padding: 0 var(--ebay-gutter);
+  box-sizing: border-box;
+}
+
+.ebay-theme main > .section > .default-content-wrapper h2 {
+  margin: 0 0 25px;
+  font-size: var(--ebay-section-title-size);
+  line-height: var(--ebay-section-title-line);
+}
+
+/* promo bar */
+.ebay-theme main > .section.promo-bar {
+  background-color: var(--ebay-green);
+  color: var(--ebay-white);
+}
+
+@media (width < 900px) {
+  .ebay-theme main > .section.promo-bar {
+    position: relative;
+    z-index: 2;
+  }
+}
+
+.ebay-theme main > .section.promo-bar p {
+  margin: 0;
+  padding: 11px 0 12px;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* holiday deals section */
+.ebay-theme main > .section.deals {
+  background-color: var(--ebay-surface);
+  padding: 32px 0 44px;
+}
+
+.ebay-theme main > .section.deals > .default-content-wrapper {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.ebay-theme main > .section.deals > .default-content-wrapper p {
+  margin: 0;
+}
+
+.ebay-theme main > .section.deals > .default-content-wrapper a:any-link {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
 /* Accessibility: darken default accent and hover for better contrast
 :root {
   --main-accent-color: #C2410C; /* darker orange for contrast */

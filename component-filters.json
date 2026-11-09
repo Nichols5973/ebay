@@ -36,7 +36,11 @@
       "forex",
       "embed-adaptive-form",
       "find-a-doctor",
-      "fragment-list"
+      "fragment-list",
+      "hero-holiday",
+      "cards-category",
+      "cards-deals",
+      "cards-budget"
     ]
   },
   {
@@ -109,6 +113,24 @@
       "tnc",
       "wizard",
       "range"
+    ]
+  },
+  {
+    "id": "cards-category",
+    "components": [
+      "category-card"
+    ]
+  },
+  {
+    "id": "cards-deals",
+    "components": [
+      "deal-card"
+    ]
+  },
+  {
+    "id": "cards-budget",
+    "components": [
+      "budget-card"
     ]
   }
 ]
