@@ -1,0 +1,103 @@
+{
+  "pageName": "holiday",
+  "imageDirectory": "content/images/holiday",
+  "assets": [
+    {
+      "filename": "hero-christmas-tree.png",
+      "localPath": "./images/holiday/hero-christmas-tree.png",
+      "usage": "content-image",
+      "status": "downloaded",
+      "fileSize": 29639
+    },
+    {
+      "filename": "category-collectibles.png",
+      "localPath": "./images/holiday/category-collectibles.png",
+      "usage": "content-image",
+      "status": "composited-from-figma-screenshot",
+      "fileSize": 9034
+    },
+    {
+      "filename": "category-electronics.png",
+      "localPath": "./images/holiday/category-electronics.png",
+      "usage": "content-image",
+      "status": "composited-from-figma-screenshot",
+      "fileSize": 6948
+    },
+    {
+      "filename": "category-home-garden.png",
+      "localPath": "./images/holiday/category-home-garden.png",
+      "usage": "content-image",
+      "status": "composited-from-figma-screenshot",
+      "fileSize": 7661
+    },
+    {
+      "filename": "category-fashion.png",
+      "localPath": "./images/holiday/category-fashion.png",
+      "usage": "content-image",
+      "status": "composited-from-figma-screenshot",
+      "fileSize": 6689
+    },
+    {
+      "filename": "category-toys.png",
+      "localPath": "./images/holiday/category-toys.png",
+      "usage": "content-image",
+      "status": "composited-from-figma-screenshot",
+      "fileSize": 6191
+    },
+    {
+      "filename": "category-motors.png",
+      "localPath": "./images/holiday/category-motors.png",
+      "usage": "content-image",
+      "status": "composited-from-figma-screenshot",
+      "fileSize": 6559
+    },
+    {
+      "filename": "deal-headphones-tile.png",
+      "localPath": "./images/holiday/deal-headphones-tile.png",
+      "usage": "content-image",
+      "status": "composited-from-figma-screenshot",
+      "fileSize": 12832
+    },
+    {
+      "filename": "deal-camera-tile.png",
+      "localPath": "./images/holiday/deal-camera-tile.png",
+      "usage": "content-image",
+      "status": "composited-from-figma-screenshot",
+      "fileSize": 13125
+    },
+    {
+      "filename": "deal-candle-tile.png",
+      "localPath": "./images/holiday/deal-candle-tile.png",
+      "usage": "content-image",
+      "status": "composited-from-figma-screenshot",
+      "fileSize": 12612
+    },
+    {
+      "filename": "deal-gift-box-tile.png",
+      "localPath": "./images/holiday/deal-gift-box-tile.png",
+      "usage": "content-image",
+      "status": "composited-from-figma-screenshot",
+      "fileSize": 11422
+    }
+  ],
+  "unusedSourceFiles": [
+    "cat-collectibles.png",
+    "cat-electronics.png",
+    "cat-fashion.png",
+    "cat-home-garden.png",
+    "cat-motors.png",
+    "cat-toys.png",
+    "deal-camera.png",
+    "deal-candle.png",
+    "deal-gift-box.png",
+    "deal-headphones.png",
+    "hero-extra-1.png",
+    "hero-extra-2.png",
+    "hero-extra-3.png"
+  ],
+  "summary": {
+    "totalDiscovered": 11,
+    "totalDownloaded": 11,
+    "totalMissing": 0
+  }
+}
