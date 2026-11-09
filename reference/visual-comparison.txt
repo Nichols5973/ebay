@@ -1,0 +1,20 @@
+Viewport: 1440px (Figma frame width)
+Broken images: 0
+Typography: Archivo Black (headings, prices; self-hosted fonts/ArchivoBlack-latin.woff2) + Arial (body)
+  Fonts switched from Inter to match the approved screenshot; all spacing rows re-measured and still PASS
+Spacing/geometry (actual/design, px):
+  header                 y 0/0       h 72/72    PASS
+  promo-bar              y 72/72     h 40/40    PASS
+  hero-holiday section   y 112/112   h 520/520  PASS
+  hero h1                y 234/238   h 174/174  PASS (-4px, within tolerance)
+  hero image             y 170/170   h 400/400  w 500/500 PASS
+  category heading       y 672/672   h 39/39    PASS
+  category tile          y 736/736   h 160/160  PASS
+  deals section          y 1000/1000 h 560/560  PASS
+  deal card              y 1096/1096 h 420/420  w 296/296 PASS
+  budget heading         y 1612/1612 h 39/39    PASS
+  budget tile            y 1676/1676 h 160/160  w 394/394 PASS
+  footer                 y 1900/1900 h 201/200  PASS
+  page height            2101/2100
+Mobile (390px): no horizontal overflow; deals 2-up; promo bar above hero decoration.
+Unresolved: none
