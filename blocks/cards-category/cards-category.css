@@ -49,6 +49,7 @@ main > .section.cards-category-container {
   font-size: 16px;
   line-height: 19px;
   font-weight: 700;
+  white-space: nowrap;
 }
 
 .cards-category .cards-category-body a:any-link {
