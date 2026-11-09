@@ -1136,10 +1136,10 @@ table {
   --nav-text-color: var(--ebay-ink);
   --footer-background-color: var(--ebay-ink);
   --footer-text-color: var(--ebay-white);
-  --body-font-family: inter, roboto, roboto-fallback, sans-serif;
-  --heading-font-family: inter, roboto, roboto-fallback, sans-serif;
-  --light-font-family: inter, roboto, roboto-fallback, sans-serif;
-  --black-font-family: inter, roboto, roboto-fallback, sans-serif;
+  --body-font-family: arial, helvetica, 'Liberation Sans', sans-serif;
+  --heading-font-family: 'Archivo Black', 'Arial Black', arial, sans-serif;
+  --light-font-family: arial, helvetica, 'Liberation Sans', sans-serif;
+  --black-font-family: 'Archivo Black', 'Arial Black', arial, sans-serif;
   --nav-height: 72px;
 
   font-size: 16px;

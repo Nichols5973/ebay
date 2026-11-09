@@ -51,6 +51,7 @@
 }
 
 .cards-deals .cards-deals-body p.cards-deals-price {
+  font-family: var(--heading-font-family);
   margin-top: 16px;
   color: var(--cards-deals-title);
   font-size: 22px;
